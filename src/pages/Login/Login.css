@@ -1,0 +1,9 @@
+.login-input{
+width:	70%;
+border: 1px solid white;
+border-radius: 10px;
+box-shadow: 0px 2px 4px #878600;
+padding: 10px ;
+margin: 10px;
+outline:none;
+}

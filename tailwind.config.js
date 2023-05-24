@@ -11,6 +11,14 @@ export default {
         "secondary": "#FFAD26",
         "neutral": "#545555",
       },
+      backgroundImage: (theme) => ({
+        "gradient":
+          "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
+        "login-img": "url('./assets/fg.png')",
+      }),
+      fontFamily: {
+        worksans: [" Work Sans", "sans-serif"]
+      },
     },
     screens: {
       xs: "480px",
