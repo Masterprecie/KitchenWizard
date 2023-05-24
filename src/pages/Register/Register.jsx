@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const Register = () => {
 	return (
 		<>
-			<section className="sm:flex md:flex items-center h-screen w-full">
+			<section className="sm:flex md:flex items-center sm:h-[110vh] md:h-screen w-full">
 				<div className=" left-section bg-gradient h-full sm:w-2/4 place-content-center hidden sm:flex ">
 					<div className='sm:pt-40'>
 						<img src={registerImg} alt="register-bg" />
@@ -45,7 +45,7 @@ const Register = () => {
 							</div>
 
 							<button
-								className='bg-secondary p-3 w-[70%] rounded-full text-white mt-5'
+								className='bg-secondary p-3 w-[80%] rounded-full text-white mt-5 sm:w-[80%]'
 								type="submit">
 								Sign Up
 							</button>

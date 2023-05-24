@@ -17,7 +17,7 @@ export default {
         "login-img": "url('./assets/fg.png')",
       }),
       fontFamily: {
-        worksans: [" Work Sans", "sans-serif"]
+        worksans: ["Work Sans", "sans-serif"]
       },
     },
     screens: {
