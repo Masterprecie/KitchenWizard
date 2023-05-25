@@ -22,9 +22,6 @@ function App() {
       )}
       <Route path="/login" element={<Login />} />
     </Routes>
-
-
-
   )
 }
 

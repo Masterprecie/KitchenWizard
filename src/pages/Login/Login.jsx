@@ -3,8 +3,18 @@ import './Login.css'
 import { FcGoogle } from 'react-icons/fc'
 import { BsFacebook, BsTwitter } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
+import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
+import { useState } from 'react'
 
 const Login = () => {
+	const [toggleEye, setToggleEye] = useState(false);
+	const [inputType, setInputType] = useState("password");
+
+	const handleToggle = (e) => {
+		setToggleEye(!toggleEye);
+		setInputType(inputType === "password" ? "text" : "password");
+	};
+
 	return (
 		<>
 			<section className="sm:flex md:flex items-center h-screen w-full">
@@ -27,11 +37,19 @@ const Login = () => {
 								placeholder="Email"
 							/>
 							<br />
-							<input
-								className='login-input'
-								type="password"
-								placeholder="Password"
-							/>
+							<div className='formInput'>
+
+								<input
+									className='login-input'
+									type={inputType}
+									name="password"
+									placeholder="Password"
+								/>
+								<div className="eyeIcon" onClick={handleToggle}>
+									{toggleEye ? <AiFillEye /> : <AiFillEyeInvisible />}
+
+								</div>
+							</div>
 							<br />
 
 							<div>
