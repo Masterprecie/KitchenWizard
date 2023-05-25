@@ -10,6 +10,17 @@ const Register = () => {
 	const [toggleEye, setToggleEye] = useState(false);
 	const [inputType, setInputType] = useState("password");
 
+	const [inputValues, setInputValues] = useState({
+		email: " ",
+		name: "",
+		password: "",
+	})
+
+	const handleChange = (e) => {
+		setInputValues((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+		console.log(inputValues);
+	}
+
 	const handleToggle = (e) => {
 		setToggleEye(!toggleEye);
 		setInputType(inputType === "password" ? "text" : "password");
@@ -35,12 +46,20 @@ const Register = () => {
 								className='login-input'
 								type="email"
 								placeholder="Email"
+								name='email'
+								id='email'
+								onChange={handleChange}
+								required
 							/>
 							<br />
 							<input
 								className='login-input'
 								type="text"
 								placeholder="First Name"
+								name='name'
+								id='name'
+								onChange={handleChange}
+								required
 							/>
 							<br />
 							<div className='formInput'>
@@ -50,6 +69,9 @@ const Register = () => {
 									type={inputType}
 									name="password"
 									placeholder="Password"
+									id='password'
+									onChange={handleChange}
+									required
 								/>
 								<div className="eyeIcon" onClick={handleToggle}>
 									{toggleEye ? <AiFillEye /> : <AiFillEyeInvisible />}
