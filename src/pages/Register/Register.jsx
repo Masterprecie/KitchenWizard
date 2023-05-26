@@ -2,9 +2,30 @@ import registerImg from '@/assets/registerImg.png'
 import '../Login/Login.css'
 import { FcGoogle } from 'react-icons/fc'
 import { BsFacebook, BsTwitter } from 'react-icons/bs'
+import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const Register = () => {
+	const [toggleEye, setToggleEye] = useState(false);
+	const [inputType, setInputType] = useState("password");
+
+	const [inputValues, setInputValues] = useState({
+		email: " ",
+		name: "",
+		password: "",
+	})
+
+	const handleChange = (e) => {
+		setInputValues((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+		console.log(inputValues);
+	}
+
+	const handleToggle = (e) => {
+		setToggleEye(!toggleEye);
+		setInputType(inputType === "password" ? "text" : "password");
+	};
+
 	return (
 		<>
 			<section className="sm:flex md:flex items-center sm:h-[110vh] md:h-screen w-full">
@@ -25,19 +46,38 @@ const Register = () => {
 								className='login-input'
 								type="email"
 								placeholder="Email"
+								name='email'
+								id='email'
+								onChange={handleChange}
+								required
 							/>
 							<br />
 							<input
 								className='login-input'
 								type="text"
 								placeholder="First Name"
+								name='name'
+								id='name'
+								onChange={handleChange}
+								required
 							/>
 							<br />
-							<input
-								className='login-input'
-								type="password"
-								placeholder="Password"
-							/>
+							<div className='formInput'>
+
+								<input
+									className='login-input'
+									type={inputType}
+									name="password"
+									placeholder="Password"
+									id='password'
+									onChange={handleChange}
+									required
+								/>
+								<div className="eyeIcon" onClick={handleToggle}>
+									{toggleEye ? <AiFillEye /> : <AiFillEyeInvisible />}
+
+								</div>
+							</div>
 							<br />
 
 							<div>

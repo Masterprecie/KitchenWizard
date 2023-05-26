@@ -14,17 +14,17 @@ export default function Hero() {
         </p>
         <p>Explore variety of Cusines and add</p>
         <p>it your meal plain enjoy eating</p>
-        <form class="form-page" action="">
-          <input type="text" placeholder="Search.." name="search" />
+        <form className="form-page" action="">
+          <input type="text" placeholder="Search for a recipe" name="search" />
           <button type="submit">
-            <i class="fa fa-search"></i>
+            <i className="fa fa-search"></i>
           </button>
         </form>
         <p className="Explore rule">
-          Explore <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          Explore <i className="fa fa-arrow-right" aria-hidden="true"></i>
         </p>
       </div>
-      <img src={HeroImage} alt="" className="Hero-Image" />
+      <img src={HeroImage} alt="hero-image" className="Hero-Image" />
     </div>
   );
 }

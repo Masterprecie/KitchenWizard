@@ -13,19 +13,17 @@ function App() {
   };
 
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      {isFirstTimeUser ? (
-        <Route path="/register" element={<Register />} />
-      ) : (
-        <Route path="/register" element={<Navigate to="/login" />} />
-      )}
-      <Route path="/login" element={<Login />} />
-    </Routes>
-
-
-
+    < div className='app'>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {isFirstTimeUser ? (
+          <Route path="/register" element={<Register />} />
+        ) : (
+          <Route path="/register" element={<Navigate to="/login" />} />
+        )}
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </div>
   )
 }
-
 export default App
