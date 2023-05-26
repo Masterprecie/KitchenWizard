@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import HeroImage from "../../assets/loginBg.png";
+import HeroImage from "../../assets/fast.png";
 
 export default function Hero() {
   return (
