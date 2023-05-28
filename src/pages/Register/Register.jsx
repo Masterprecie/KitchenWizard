@@ -3,18 +3,25 @@ import '../Login/Login.css'
 import { FcGoogle } from 'react-icons/fc'
 import { BsFacebook, BsTwitter } from 'react-icons/bs'
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import { useUserAuth } from "../../context/UserAuthContext";
+//import { updateProfile } from 'firebase/auth'
+
 
 const Register = () => {
+	const { signUp } = useUserAuth()
+	const [error, setError] = useState("");
 	const [toggleEye, setToggleEye] = useState(false);
 	const [inputType, setInputType] = useState("password");
-
+	const { googleSignIn } = useUserAuth();
+	const navigate = useNavigate()
 	const [inputValues, setInputValues] = useState({
+		username: " ",
 		email: " ",
-		name: "",
-		password: "",
+		password: " ",
 	})
+
 
 	const handleChange = (e) => {
 		setInputValues((prev) => ({ ...prev, [e.target.name]: e.target.value }))
@@ -25,6 +32,34 @@ const Register = () => {
 		setToggleEye(!toggleEye);
 		setInputType(inputType === "password" ? "text" : "password");
 	};
+
+
+	const Register = async (e) => {
+		e.preventDefault();
+		setError("");
+		try {
+			await signUp(inputValues.email, inputValues.password);
+			// await updateProfile(user, {
+			// 	displayName: inputValues.username,
+			// });
+			navigate("/login");
+		} catch (err) {
+			setError(err.message);
+		}
+
+	};
+
+	const handleGoogleSignIn = async (e) => {
+		e.preventDefault();
+		try {
+			await googleSignIn();
+			navigate("/");
+		} catch (error) {
+			console.log(error.message);
+		}
+	}
+
+
 
 	return (
 		<>
@@ -41,23 +76,24 @@ const Register = () => {
 
 						<h2 className='mt-5 md:mt-8 mb-3 font-bold text-2xl'>Sign Up</h2>
 
-						<form action="">
+						<form onSubmit={Register}>
+							{error && <p>{error}</p>}
 							<input
 								className='login-input'
-								type="email"
-								placeholder="Email"
-								name='email'
-								id='email'
+								type="text"
+								placeholder="User Name"
+								name="username"
+								id="username"
 								onChange={handleChange}
 								required
 							/>
 							<br />
 							<input
 								className='login-input'
-								type="text"
-								placeholder="First Name"
-								name='name'
-								id='name'
+								type="email"
+								placeholder="Email"
+								name="email"
+								id="email"
 								onChange={handleChange}
 								required
 							/>
@@ -99,9 +135,9 @@ const Register = () => {
 						</div>
 
 						<p className='md:mt-8 font-semibold'>Log In With</p>
-						<div className='flex justify-center gap-10 mt-5'>
-							<a href="#"><FcGoogle size={50} /></a>
-							<a href="#"><BsFacebook size={50} className='text-cyan-600' /></a>
+						<div className='flex justify-center align-center gap-10 mt-5'>
+							<a href="#"><FcGoogle size={50} onClick={handleGoogleSignIn} /></a>
+							<a href="#"><BsFacebook size={45} className='text-cyan-600' /></a>
 							<a href="#"><BsTwitter size={50} className='text-cyan-500' /></a>
 
 						</div>
