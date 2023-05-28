@@ -1,6 +1,6 @@
 import React from "react";
-import "./Navbar.css";
-import { Link, useNavigate } from "react-router-dom";
+import "./NavBar.css";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import UserImage from "../../assets/user.jpg";
 import Authentication from "../Authentication";
