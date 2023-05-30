@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import HeroImage from "../../assets/loginBg.png";
-
+import { AiOutlineSearch } from 'react-icons/ai'
 export default function Hero() {
   return (
     <div className="Hero bg-hero">
@@ -18,7 +18,8 @@ export default function Hero() {
           <div className="formInput">
             <input type="text" placeholder="Search for a recipe" name="search" />
             <div type="submit" className="searchIcon">
-              <i className="fa fa-search"></i>
+              {/* <i className="fa fa-search"></i> */}
+              <AiOutlineSearch />
             </div>
           </div>
         </form>

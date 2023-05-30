@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	//background-color: #545555;
+	/* background-color: #545555; */
 	align-items: stretch;
 	font-family: "Work Sans, sans-serif";
 }
@@ -46,7 +46,7 @@
 	font-size: 20px;
 	letter-spacing: 5px;
 	font-weight: 300;
-	//word-spacing: 30px;
+	/* word-spacing: 30px; */
 }
 
 .Hero-Main>p>span {
@@ -57,7 +57,7 @@
 	padding: 10px;
 	font-size: 17px;
 	border: 1px solid grey;
-	//float: left;
+	/* float: left; */
 	width: 100%;
 	background: #f1f1f1;
 	border-radius: 20px;
