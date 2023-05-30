@@ -5,22 +5,22 @@ import { BsFacebook, BsTwitter } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="bg-footer text-black font-semibold">
       <div className="footer-head">
         <h2 className="text-orange-600 text-4xl font-semibold">
           Kitchen<span className="text-green-600 text-4xl">Wizzard</span>
         </h2>
         <p>Share what you cook and tags</p>
         <p>us in</p>
-        <div className="flex  gap-10 mt-5">
+        <div className="flex items-center gap-10 mt-5">
           <a href="#">
-            <FcGoogle size={50} className="text-cyan-600" />
+            <FcGoogle size={30} className="text-cyan-600" />
           </a>
           <a href="#">
-            <BsFacebook size={45} className="text-cyan-600" />
+            <BsFacebook size={25} className="text-cyan-600" />
           </a>
           <a href="#">
-            <BsTwitter size={50} className="text-cyan-500" />
+            <BsTwitter size={30} className="text-cyan-500" />
           </a>
         </div>
         <p>

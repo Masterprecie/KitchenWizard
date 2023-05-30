@@ -10,10 +10,13 @@ export default {
         "primary": "#878600",
         "secondary": "#FFAD26",
         "neutral": "#545555",
+        "hero": "#1B1B00",
+        "footer": "#E8E8D8",
       },
       backgroundImage: (theme) => ({
         "gradient":
           "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
+
         "login-img": "url('./assets/fg.png')",
       }),
       fontFamily: {
