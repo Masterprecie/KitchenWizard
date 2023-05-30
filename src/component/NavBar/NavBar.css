@@ -1,5 +1,5 @@
 .navbar {
-	//background: linear-gradient(90deg, #FF616A 0%, #FFC837 100%);
+	/* background: linear-gradient(90deg, #FF616A 0%, #FFC837 100%); */
 	/*background: linear-gradient(90deg, #fff, #878600);*/
 	height: 80px;
 	display: flex;
@@ -84,6 +84,7 @@
 	border-radius: 50%;
 	width: 60px;
 	height: 60px;
+	margin-right:5px;
 }
 
 @media screen and (max-width: 960px) {
