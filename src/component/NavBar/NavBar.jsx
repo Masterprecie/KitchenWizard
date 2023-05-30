@@ -1,13 +1,22 @@
 import React from "react";
-import "./Navbar.css";
+import "./NavBar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import UserImage from "../../assets/user.jpg";
+import Authentication from "../Authentication";
+import { useUserAuth } from "../../context/UserAuthContext";
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  // const { currentUser } = useContext(AuthContext);
+
+  const { user } = useUserAuth();
+
+
   return (
     <>
       <nav className="navbar">
@@ -32,16 +41,33 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link
+              <Authentication />
+              {/* <Link
                 to="/register"
+                className="nav-links"
+
+              >
+                Sign in
+              </Link> */}
+
+            </li>
+            {/* <li className="nav-item">
+              <Link
+                to="/login"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Sign in
+                Log in
               </Link>
-            </li>
+            </li> */}
           </ul>
-          <img className="user" src={UserImage} alt="user" />
+          <img
+            className="user"
+            src={UserImage}
+            alt="user"
+          />
+          {user && user.email}
+
         </div>
       </nav>
     </>
