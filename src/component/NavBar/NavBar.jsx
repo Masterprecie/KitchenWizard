@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar bg-footer">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo">
             <h2 className='text-orange-600 text-4xl font-semibold'>Kitchen<span className='text-green-600 text-4xl'>Wizzard</span></h2>

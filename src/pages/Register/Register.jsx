@@ -135,7 +135,7 @@ const Register = () => {
 						</div>
 
 						<p className='md:mt-8 font-semibold'>Log In With</p>
-						<div className='flex justify-center align-center gap-10 mt-5'>
+						<div className='flex justify-center items-center gap-10 mt-5'>
 							<a href="#"><FcGoogle size={50} onClick={handleGoogleSignIn} /></a>
 							<a href="#"><BsFacebook size={45} className='text-cyan-600' /></a>
 							<a href="#"><BsTwitter size={50} className='text-cyan-500' /></a>

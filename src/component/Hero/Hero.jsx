@@ -1,10 +1,10 @@
 import React from "react";
 import "./Hero.css";
-import HeroImage from "../../assets/fast.png";
+import HeroImage from "../../assets/loginBg.png";
 
 export default function Hero() {
   return (
-    <div className="Hero">
+    <div className="Hero bg-hero">
       <div className="Hero-Main">
         <p>
           Find Your Daily <span>Meal</span>
@@ -15,10 +15,12 @@ export default function Hero() {
         <p>Explore variety of Cusines and add</p>
         <p>it your meal plain enjoy eating</p>
         <form className="form-page" action="">
-          <input type="text" placeholder="Search for a recipe" name="search" />
-          <button type="submit">
-            <i className="fa fa-search"></i>
-          </button>
+          <div className="formInput">
+            <input type="text" placeholder="Search for a recipe" name="search" />
+            <div type="submit" className="searchIcon">
+              <i className="fa fa-search"></i>
+            </div>
+          </div>
         </form>
         <p className="Explore rule">
           Explore <i className="fa fa-arrow-right" aria-hidden="true"></i>

@@ -44,13 +44,6 @@ const Authentication = () => {
 					>
 						Sign in
 					</Link>
-					<Link
-						to="/login"
-						className="nav-links"
-					// onClick={closeMobileMenu}
-					>
-						Log in
-					</Link>
 
 				</> : <>
 					<Link
