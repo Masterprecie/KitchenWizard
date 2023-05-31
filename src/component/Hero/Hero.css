@@ -2,8 +2,9 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background-color: #545555;
+	/* background-color: #545555; */
 	align-items: stretch;
+	font-family: "Work Sans, sans-serif";
 }
 
 .Hero-Main {
@@ -21,31 +22,31 @@
 .Hero-Main>p {
 	text-align: left;
 	color: #fff;
-	font-size: 30px;
+	font-size: 2rem;
 	padding: 10px 0;
-	letter-spacing: 6px;
+	letter-spacing: 5px;
 	font-weight: 600;
-	word-spacing: 20px;
+	word-spacing: 5px;
 }
 
 .Hero-Main>p:nth-child(3),
 .Hero-Main>p:nth-child(4) {
-	font-size: 10px;
+	font-size: 1rem;
 	letter-spacing: 5px;
-	font-weight: 300;
-	word-spacing: 6px;
+	font-weight: 400;
+	word-spacing: 5px;
 }
 
 .Hero-Main>p:nth-child(4) {
-	margin-bottom: 75px;
+	margin-bottom: 40px;
 }
 
 .Explore.rule {
-	margin-top: 150px;
+	margin-top: 50px;
 	font-size: 20px;
 	letter-spacing: 5px;
 	font-weight: 300;
-	word-spacing: 30px;
+	/* word-spacing: 30px; */
 }
 
 .Hero-Main>p>span {
@@ -56,12 +57,13 @@
 	padding: 10px;
 	font-size: 17px;
 	border: 1px solid grey;
-	float: left;
-	width: 80%;
+	/* float: left; */
+	width: 100%;
 	background: #f1f1f1;
+	border-radius: 20px;
 }
 
-.form-page button {
+/* .form-page button {
 	float: left;
 	width: 20%;
 	padding: 10px;
@@ -71,8 +73,21 @@
 	border: 1px solid grey;
 	border-left: none;
 	cursor: pointer;
-}
+} */
 
+.formInput {
+	position: relative;
+	}
+
+.searchIcon {
+	position: absolute;
+	top: 9px;
+	right: 20px;
+	font-size: 18px !important;
+	padding: 5px;
+	color: #3a39397f;
+	cursor: pointer;
+}
 
 @media screen and (max-width: 960px) {
 	.Hero-Image {
