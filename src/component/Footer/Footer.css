@@ -6,7 +6,6 @@ footer {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: stretch;
-	font-family: "Work Sans, sans-serif";
 }
 
 footer>div {
@@ -21,9 +20,9 @@ footer>div {
 	padding: 20px 0;
 }
 
-.footer-head>p {
+/* .footer-head>p {
 	padding: 1px 0;
-}
+} */
 
 .footer-body {
 	display: flex;
@@ -40,7 +39,8 @@ footer>div {
 
 .footer-body>div:nth-child(1),
 .footer-body>div:nth-child(2) {
-	border-right: 3px solid black;
+	border-right: 3px solid  rgb(249,115,22);
+	height: 80%;
 }
 
 .footer-body>div>a {
@@ -59,10 +59,12 @@ footer>div {
 		flex-direction: column-reverse;
 		flex-wrap: nowrap;
 		height: 100%;
+		padding-top: 30px;
 	}
 
 	.footer-head {
 		padding: 0 50px;
+		text-align: center;
 	}
 
 	footer>div {
@@ -76,5 +78,10 @@ footer>div {
 	.footer-head>p:nth-child(3) {
 		align-items: center;
 	}
+
+	.footer-body>div>a {
+	padding: 7px 10px;
+	font-size: 10px;
+}
 
 }
