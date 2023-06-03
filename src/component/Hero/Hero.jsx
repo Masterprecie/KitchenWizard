@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import HeroImage from "../../assets/loginBg.png";
-import { AiOutlineSearch } from 'react-icons/ai'
+import SearchForm from "./SearchForm";
 export default function Hero() {
   return (
     <div className="Hero bg-hero">
@@ -14,15 +14,7 @@ export default function Hero() {
         </p>
         <p>Explore variety of Cusines and add</p>
         <p>it your meal plain enjoy eating</p>
-        <form className="form-page" action="">
-          <div className="formInput">
-            <input type="text" placeholder="Search for a recipe" name="search" />
-            <div type="submit" className="searchIcon">
-              {/* <i className="fa fa-search"></i> */}
-              <AiOutlineSearch />
-            </div>
-          </div>
-        </form>
+        <SearchForm />
         <p className="Explore rule">
           Explore <i className="fa fa-arrow-right" aria-hidden="true"></i>
         </p>

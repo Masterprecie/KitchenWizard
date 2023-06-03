@@ -12,6 +12,7 @@ export default {
         "neutral": "#545555",
         "hero": "#1B1B00",
         "footer": "#E8E8D8",
+        "body": 'whitesmoke',
       },
       backgroundImage: (theme) => ({
         "gradient":
