@@ -1,3 +1,3 @@
-import loader from '../assets/images/loader.svg'
+import loader from '../assets/loader.svg'
 
 export { loader };

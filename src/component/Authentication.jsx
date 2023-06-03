@@ -1,26 +1,10 @@
-import { auth } from '../Firebase'
-// import { onAuthStateChanged, signOut } from "firebase/auth";
-// import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useUserAuth } from "../context/UserAuthContext";
 const Authentication = () => {
-	//const [authenticateUser, setAuthenticateUser] = useState('')
+
 	const { logOut, user } = useUserAuth();
 	const navigate = useNavigate();
 
-	// useEffect(() => {
-	// 	const listenAuth = onAuthStateChanged(auth, (user) => {
-	// 		if (user) {
-	// 			setAuthenticateUser(user)
-	// 		} else {
-	// 			setAuthenticateUser(null)
-	// 		}
-	// 	})
-	// 	return () => {
-	// 		listenAuth()
-	// 	}
-
-	// }, [])
 
 	const handleLogout = async () => {
 		try {

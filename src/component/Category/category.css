@@ -1,0 +1,89 @@
+.title{
+text-transform: uppercase;
+margin-bottom: 1rem;
+font-weight: bold;
+letter-spacing: 4px;
+position: relative;
+font-size: 24px;
+padding: 4px 0;
+position: relative;
+}
+
+.title::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 0;
+height: 4px;
+width: 80px;
+background-color: rgb(249,115,22);
+}
+
+.category-itm {
+box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+border-radius: 3px;
+box-shadow: rgba(99, 99, 99, 0.09) 0px 2px 8px 0px;
+border-radius: 10px;
+position: relative;
+}
+
+.category-itm-img{
+height: 350px;
+position: relative;
+}
+
+.meal-itm-img{
+position: relative;
+}
+
+.meal-itm-img > img {
+border-radius: 20px;
+padding: 12px;
+transition: all 300ms ease-in-out;	
+}
+
+.meal-itm-img > img:hover{
+transform: scale(0.8);
+}
+
+.category-itm-cat {
+position: absolute;
+right: 12px;
+top: 12px;
+padding: 0 18px;
+border-radius: 16px;
+font-size: 13px;
+background-color: white;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.category-itm-img > img {
+padding: 12px;
+transition: all 300ms ease-in-out;
+}
+
+.category-itm-img > img:hover{
+transform: scale(0.8);
+}
+
+.category-itm .category-itm-title{
+position: absolute;
+top: 6px;
+right: 6px;
+padding: 1px 8px;
+border-radius: 3px;
+box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+transition: all 300ms ease-in-out;;
+}
+
+.category-itm-title :hover{
+opacity: 1;
+border-radius: 2px;
+}
+
+
+
+
+
+
+
