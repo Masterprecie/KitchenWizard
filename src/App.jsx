@@ -2,7 +2,10 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Login from '@/pages/Login/Login'
 import Home from '@/pages/Home/Home'
 import Register from '@/pages/Register/Register'
+import MealDetails from '@/pages/mealdetails/MealDetails'
+import Error from '@/pages/error/Error'
 import { useState } from 'react';
+import Category from './pages/category/Category'
 
 function App() {
   const [isFirstTimeUser, setIsFirstTimeUser] = useState(true);
@@ -22,6 +25,9 @@ function App() {
           <Route path="/register" element={<Navigate to="/login" />} />
         )}
         <Route path="/login" element={<Login />} />
+        <Route path='/meal/:id' element={<MealDetails />} />
+        <Route path='/meal/category/:name' element={<Category />} />
+        <Route path='*' element={<Error />} />
       </Routes>
     </div>
   )
