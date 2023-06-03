@@ -6,6 +6,7 @@ import MealDetails from '@/pages/mealdetails/MealDetails'
 import Error from '@/pages/error/Error'
 import { useState } from 'react';
 import Category from './pages/category/Category'
+import Blog from './pages/blog/Blog'
 
 function App() {
   const [isFirstTimeUser, setIsFirstTimeUser] = useState(true);
@@ -27,6 +28,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path='/meal/:id' element={<MealDetails />} />
         <Route path='/meal/category/:name' element={<Category />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </div>
