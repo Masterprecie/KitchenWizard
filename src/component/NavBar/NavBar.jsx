@@ -12,7 +12,7 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  // const { currentUser } = useContext(AuthContext);
+
 
   const { user } = useUserAuth();
 
