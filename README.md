@@ -61,7 +61,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Team
 
-[![Ikpa Precious](https://github.com/Masterprecie/KitchenWizzard/src/assets/DP8.png)](https://github.com/Masterprecie)  | [![Halabi Timothy](https://github.com/Halabitimoty/KitchenWizzard/src/assets/tim.jpg)](https://github.com/Halabitimoty)
+[![Ikpa Precious](https://github.com/Masterprecie/KitchenWizzard/dev/src/assets/DP8.png)](https://github.com/Masterprecie)  | [![Halabi Timothy](https://github.com/Halabitimoty/KitchenWizzard/dev/src/assets/tim.jpg)](https://github.com/Halabitimoty)
 ---|---
 [Ikpa Precious ](https://github.com/Masterprecie) |[Halabi Timothy](https://github.com/Halabitimoty)
 
