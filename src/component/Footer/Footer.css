@@ -37,9 +37,12 @@ footer>div {
 	width: 33%;
 }
 
-.footer-body>div:nth-child(1),
-.footer-body>div:nth-child(2) {
+.footer-body>div:nth-child(1){
 	border-right: 3px solid  rgb(249,115,22);
+	height: 80%;
+}
+.footer-body>div:nth-child(3) {
+	border-left: 3px solid  rgb(249,115,22);
 	height: 80%;
 }
 
@@ -52,6 +55,7 @@ footer>div {
 	padding: 10px 25px;
 
 }
+
 
 @media screen and (max-width: 960px) {
 	footer {
