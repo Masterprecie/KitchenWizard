@@ -24,7 +24,6 @@ function Navbar() {
           <Link to="/" className="navbar-logo">
             <h2 className='text-orange-600 text-4xl font-semibold'>Kitchen<span className='text-green-600 text-4xl'>Wizzard</span></h2>
 
-            {/* Kitchen<font className="logo">Wizzard</font> */}
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
@@ -66,7 +65,9 @@ function Navbar() {
             src={UserImage}
             alt="user"
           />
-          {user && user.email}
+          <span className="userLogin">
+            {user && user.email}
+          </span>
 
         </div>
       </nav>
