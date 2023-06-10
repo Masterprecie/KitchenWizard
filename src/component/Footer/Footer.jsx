@@ -13,7 +13,7 @@ export default function Footer() {
         <p>us in</p>
         <div className="flex items-center justify-center md:justify-start gap-10 mt-5">
           <a href="#">
-            <BsInstagram size={30} className="text-orange-700" />
+            <BsInstagram size={25} className="text-orange-500" />
           </a>
           <a href="#">
             <BsFacebook size={25} className="text-cyan-600" />
@@ -22,7 +22,7 @@ export default function Footer() {
             <BsTwitter size={30} className="text-cyan-500" />
           </a>
         </div>
-        <p className="pt-5 text-xs">
+        <p className="pt-3 text-xs">
           Copyrights &#169;2023
           <span> </span>
           <span className="text-sm font-semibold">
