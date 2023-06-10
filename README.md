@@ -1,4 +1,4 @@
-# ![KitchenWizzard](https://iharsh234.github.io/WebApp/images/demo/demo_landing.JPG)
+# ![KitchenWizzard](https://github.com/Masterprecie/KitchenWizard/tree/dev/src/assets/kwv.png)
 # KitchenWizzard
 <table>
 <tr>
@@ -16,11 +16,10 @@ Here is a working live demo :  https://kitchenwizzard.netlify.app/
 ## Site
 
 
-
 ## Mobile support
 The WebApp is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
 
-![](https://iharsh234.github.io/WebApp/images/demo/mobile.png)
+![](https://github.com/Masterprecie/KitchenWizard/tree/dev/src/assets/kmv.png)
 
 
 
@@ -61,7 +60,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Team
 
-[![Ikpa Precious](https://github.com/Masterprecie/KitchenWizzard/dev/src/assets/DP8.png)](https://github.com/Masterprecie)  | [![Halabi Timothy](https://github.com/Halabitimoty/KitchenWizzard/dev/src/assets/tim.jpg)](https://github.com/Halabitimoty)
+[![Ikpa Precious](https://github.com/Masterprecie/KitchenWizard/tree/dev/src/assets/DP8.png)](https://github.com/Masterprecie)  | [![Halabi Timothy](https://github.com/Masterprecie/KitchenWizard/tree/dev/src/assets/tim.jpg)](https://github.com/Halabitimoty)
 ---|---
 [Ikpa Precious ](https://github.com/Masterprecie) |[Halabi Timothy](https://github.com/Halabitimoty)
 
