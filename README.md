@@ -64,5 +64,3 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ---|---
 [Ikpa Precious ](https://github.com/Masterprecie) |[Halabi Timothy](https://github.com/Halabitimoty)
 
-
-
