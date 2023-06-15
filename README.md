@@ -1,4 +1,4 @@
-# ![KitchenWizzard](https://iharsh234.github.io/WebApp/images/demo/demo_landing.JPG)
+# ![KitchenWizzard](https://iash234.github.io/WebApp/images/demo/demo_landing.JPG)
 # KitchenWizzard
 <table>
 <tr>
@@ -20,7 +20,7 @@ Here is a working live demo :  https://kitchenwizzard.netlify.app/
 ## Mobile support
 The WebApp is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
 
-![](https://iharsh234.github.io/WebApp/images/demo/mobile.png)
+![](https://ihah234.github.io/WebApp/images/demo/mobile.png)
 
 
 
